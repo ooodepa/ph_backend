@@ -16,3 +16,8 @@ yarn add class-validator
 yarn add class-transformer
 
 yarn add uuid
+
+yarn add dotenv
+
+yarn nest g res res/api/v3/PH_CTL_SitemapChangefreq --no-spec
+yarn migr-gen src/migrations/PH_CTL_SitemapChangefreq

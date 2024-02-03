@@ -1,9 +1,31 @@
+import * as path from 'path';
 import { Module } from '@nestjs/common';
-import { AppController } from './app.controller';
+import { TypeOrmModule } from '@nestjs/typeorm';
+
 import { AppService } from './app.service';
+import { AppController } from './app.controller';
+import { PhCtlSitemapChangefreqModule } from './res/api/v3/ph_ctl_sitemap-changefreq/ph_ctl_sitemap-changefreq.module';
+import { ConfigModule } from '@nestjs/config';
 
 @Module({
-  imports: [],
+  imports: [
+    ConfigModule.forRoot({
+      envFilePath: '.env',
+    }),
+    TypeOrmModule.forRoot({
+      type: 'postgres',
+      host: process.env.DB_HOST,
+      port: Number(process.env.DB_PORT),
+      username: process.env.DB_USER,
+      password: process.env.DB_PASS,
+      database: process.env.DB_NAME,
+      entities: [path.join('dist', '**', '*.entity.js')],
+      logging: true,
+      logger: 'file',
+      synchronize: false,
+    }),
+    PhCtlSitemapChangefreqModule,
+  ],
   controllers: [AppController],
   providers: [AppService],
 })

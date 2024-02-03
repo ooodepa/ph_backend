@@ -6,6 +6,9 @@
   "private": true,
   "license": "UNLICENSED",
   "scripts": {
+    "migr-gen": "yarn build && typeorm --dataSource dist/config/migration.config.js migration:generate --pretty true",
+    "migr-run": "yarn build && typeorm --dataSource dist/config/migration.config.js migration:run",
+    "migr-rev": "typeorm --dataSource dist/config/migration.config.js migration:revert",
     "build": "nest build",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
     "start": "nest start",
@@ -28,6 +31,7 @@
     "@nestjs/typeorm": "^10.0.1",
     "class-transformer": "^0.5.1",
     "class-validator": "^0.14.1",
+    "dotenv": "^16.4.1",
     "pg": "^8.11.3",
     "reflect-metadata": "^0.1.13",
     "rxjs": "^7.8.1",
