@@ -1,11 +1,12 @@
 import * as path from 'path';
 import { Module } from '@nestjs/common';
+import { ConfigModule } from '@nestjs/config';
 import { TypeOrmModule } from '@nestjs/typeorm';
 
 import { AppService } from './app.service';
 import { AppController } from './app.controller';
+import { PhCtlLanguagesModule } from './res/api/v3/ph_ctl_languages/ph_ctl_languages.module';
 import { PhCtlSitemapChangefreqModule } from './res/api/v3/ph_ctl_sitemap-changefreq/ph_ctl_sitemap-changefreq.module';
-import { ConfigModule } from '@nestjs/config';
 
 @Module({
   imports: [
@@ -25,6 +26,7 @@ import { ConfigModule } from '@nestjs/config';
       synchronize: false,
     }),
     PhCtlSitemapChangefreqModule,
+    PhCtlLanguagesModule,
   ],
   controllers: [AppController],
   providers: [AppService],

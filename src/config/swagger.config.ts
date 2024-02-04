@@ -8,6 +8,7 @@ const swaggerConfig = new DocumentBuilder()
     'api_v3_ph-ctl-sitemap-changefreq',
     'Каталог частоты обновления страницы (Sitemap)',
   )
+  .addTag('api_v3_ph-ctl-languages', 'Каталог языков')
   .addBearerAuth(
     {
       type: 'http',
