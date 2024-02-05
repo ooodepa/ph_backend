@@ -12,7 +12,7 @@ import { PhCtlItemsService } from './ph_ctl_items.service';
 import { CreatePhCtlItemDto } from './dto/create-ph_ctl_item.dto';
 import { UpdatePhCtlItemDto } from './dto/update-ph_ctl_item.dto';
 
-@Controller('ph-ctl-items')
+@Controller('ph_backend/api/v3/ph-ctl-items')
 export class PhCtlItemsController {
   constructor(private readonly phCtlItemsService: PhCtlItemsService) {}
 

@@ -12,7 +12,7 @@ import { PhCtlBrandsService } from './ph_ctl_brands.service';
 import { CreatePhCtlBrandDto } from './dto/create-ph_ctl_brand.dto';
 import { UpdatePhCtlBrandDto } from './dto/update-ph_ctl_brand.dto';
 
-@Controller('ph-ctl-brands')
+@Controller('ph_backend/api/v3/ph-ctl-brands')
 export class PhCtlBrandsController {
   constructor(private readonly phCtlBrandsService: PhCtlBrandsService) {}
 

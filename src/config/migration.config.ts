@@ -5,12 +5,8 @@ import { DataSource, DataSourceOptions } from 'typeorm';
 dotenv.config();
 
 export const dataSourceOptions: DataSourceOptions = {
-  type: 'postgres',
-  host: process.env.DB_HOST,
-  port: Number(process.env.DB_PORT),
-  username: process.env.DB_USER,
-  password: process.env.DB_PASS,
-  database: process.env.DB_NAME,
+  type: 'sqlite',
+  database: process.env.DB_NAME || './database.sqlite',
   entities: [path.join('dist', '**', '*.entity.js')],
   migrations: [path.join('dist', 'migrations', '*.js')],
   migrationsTableName: 'PH_migrations',

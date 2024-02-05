@@ -1,4 +1,6 @@
 docker
+.env
+*.sqlite
 
 # compiled output
 /dist

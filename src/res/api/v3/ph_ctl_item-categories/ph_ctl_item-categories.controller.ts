@@ -12,7 +12,7 @@ import { PhCtlItemCategoriesService } from './ph_ctl_item-categories.service';
 import { CreatePhCtlItemCategoryDto } from './dto/create-ph_ctl_item-category.dto';
 import { UpdatePhCtlItemCategoryDto } from './dto/update-ph_ctl_item-category.dto';
 
-@Controller('ph-ctl-item-categories')
+@Controller('ph_backend/api/v3/ph-ctl-item-categories')
 export class PhCtlItemCategoriesController {
   constructor(
     private readonly phCtlItemCategoriesService: PhCtlItemCategoriesService,

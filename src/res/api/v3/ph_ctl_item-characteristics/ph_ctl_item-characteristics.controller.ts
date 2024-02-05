@@ -12,7 +12,7 @@ import { PhCtlItemCharacteristicsService } from './ph_ctl_item-characteristics.s
 import { CreatePhCtlItemCharacteristicDto } from './dto/create-ph_ctl_item-characteristic.dto';
 import { UpdatePhCtlItemCharacteristicDto } from './dto/update-ph_ctl_item-characteristic.dto';
 
-@Controller('ph-ctl-item-characteristics')
+@Controller('ph_backend/api/v3/ph-ctl-item-characteristics')
 export class PhCtlItemCharacteristicsController {
   constructor(
     private readonly phCtlItemCharacteristicsService: PhCtlItemCharacteristicsService,

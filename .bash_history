@@ -9,6 +9,10 @@ yarn add swagger-ui-express
 yarn add -D express@^4.0.0
 
 yarn add pg
+yarn remove pg
+
+yarn add sqlite3
+
 yarn add @nestjs/typeorm
 yarn add typeorm
 

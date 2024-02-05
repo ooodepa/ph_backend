@@ -12,7 +12,7 @@ import { PhCtlSeopagesService } from './ph_ctl_seopages.service';
 import { CreatePhCtlSeopageDto } from './dto/create-ph_ctl_seopage.dto';
 import { UpdatePhCtlSeopageDto } from './dto/update-ph_ctl_seopage.dto';
 
-@Controller('ph-ctl-seopages')
+@Controller('ph_backend/api/v3/ph-ctl-seopages')
 export class PhCtlSeopagesController {
   constructor(private readonly phCtlSeopagesService: PhCtlSeopagesService) {}
 
