@@ -8,6 +8,7 @@ import { AppController } from './app.controller';
 import { PhCtlLanguagesModule } from './res/api/v3/ph_ctl_languages/ph_ctl_languages.module';
 import { PhCtlSitemapChangefreqModule } from './res/api/v3/ph_ctl_sitemap-changefreq/ph_ctl_sitemap-changefreq.module';
 import { PhCtlItemCharacteristicsModule } from './res/api/v3/ph_ctl_item-characteristics/ph_ctl_item-characteristics.module';
+import { PhCtlSeopagesModule } from './res/api/v3/ph_ctl_seopages/ph_ctl_seopages.module';
 
 @Module({
   imports: [
@@ -29,6 +30,7 @@ import { PhCtlItemCharacteristicsModule } from './res/api/v3/ph_ctl_item-charact
     PhCtlSitemapChangefreqModule,
     PhCtlLanguagesModule,
     PhCtlItemCharacteristicsModule,
+    PhCtlSeopagesModule,
   ],
   controllers: [AppController],
   providers: [AppService],

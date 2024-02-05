@@ -28,3 +28,7 @@ yarn migr-gen src/migrations/PH_CTL_Languages
 yarn nest g res res/api/v3/PH_CTL_ItemCharacteristics --no-spec
 yarn migr-gen src/migrations/PH_CTL_ItemCharacteristics
 yarn migr-gen src/migrations/PH_LST_ItemCharactTranslate
+
+yarn nest g res res/api/v3/PH_CTL_SEOPages --no-spec
+yarn migr-gen src/migrations/PH_CTL_SEOPages
+yarn migr-gen src/migrations/PH_LST_SEOPageGalery
