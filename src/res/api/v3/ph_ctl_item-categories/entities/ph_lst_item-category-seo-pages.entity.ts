@@ -6,20 +6,24 @@ import {
   PrimaryGeneratedColumn,
 } from 'typeorm';
 
-import { PhCtlBrandEntity } from './ph_ctl_brand.entity';
+import { PhCtlItemCategoryEntity } from './ph_ctl_item-category.entity';
 import { PhCtlSeoPageEntity } from '../../ph_ctl_seopages/entities/ph_ctl_seo-page.entity';
 
-@Entity('PH_LST_BrandSEOPages')
-export class PhLstBrandSEOPageEntity {
+@Entity('PH_LST_ItemCategorySEOPages')
+export class PhLstItemCategorySEOPageEntity {
   @PrimaryGeneratedColumn()
   ph_id: number;
 
-  @ManyToOne(() => PhCtlBrandEntity, (e: PhCtlBrandEntity) => e.ph_code, {
-    onDelete: 'CASCADE',
-  })
-  @JoinColumn({ name: 'ph_brandCode' })
+  @ManyToOne(
+    () => PhCtlItemCategoryEntity,
+    (e: PhCtlItemCategoryEntity) => e.ph_code,
+    {
+      onDelete: 'CASCADE',
+    },
+  )
+  @JoinColumn({ name: 'ph_itemCategoryCode' })
   @Column({ type: 'uuid' })
-  ph_brandCode: string;
+  ph_itemCategoryCode: string;
 
   @ManyToOne(() => PhCtlSeoPageEntity, (e: PhCtlSeoPageEntity) => e.ph_code, {
     onDelete: 'CASCADE',

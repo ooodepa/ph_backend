@@ -1,20 +1,19 @@
 import {
   Column,
   Entity,
-  Index,
   JoinColumn,
   ManyToOne,
   PrimaryGeneratedColumn,
 } from 'typeorm';
 
-import { PhCtlSeopageEntity } from './ph_ctl_seopage.entity';
+import { PhCtlSeoPageEntity } from './ph_ctl_seo-page.entity';
 
-@Entity('PH_LST_SEOPagesGalery')
+@Entity('PH_LST_SEOPageGalery')
 export class PhLstSeoPageGaleryEntity {
   @PrimaryGeneratedColumn()
   ph_id: number;
 
-  @ManyToOne(() => PhCtlSeopageEntity, (e: PhCtlSeopageEntity) => e.ph_code, {
+  @ManyToOne(() => PhCtlSeoPageEntity, (e: PhCtlSeoPageEntity) => e.ph_code, {
     onDelete: 'CASCADE',
   })
   @JoinColumn({ name: 'ph_SEOPageCode' })

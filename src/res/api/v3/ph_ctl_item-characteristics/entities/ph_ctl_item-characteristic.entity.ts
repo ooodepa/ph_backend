@@ -21,5 +21,5 @@ export class PhCtlItemCharacteristicEntity {
     (e: PhLstItemCharactTranslateEntity) => e.ph_itemId,
   )
   @JoinColumn({ name: 'ph_code' })
-  ph_itemCharactTranslate: PhLstItemCharactTranslateEntity[];
+  ph_lst_itemCharactTranslate: PhLstItemCharactTranslateEntity[];
 }

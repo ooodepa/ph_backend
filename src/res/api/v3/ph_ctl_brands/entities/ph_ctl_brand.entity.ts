@@ -22,12 +22,12 @@ export class PhCtlBrandEntity {
     (e: PhLstBrandGaleryEntity) => e.ph_brandCode,
   )
   @JoinColumn({ name: 'ph_code' })
-  ph_brandGalery: PhLstBrandGaleryEntity[];
+  ph_lst_brandGalery: PhLstBrandGaleryEntity[];
 
   @OneToMany(
     () => PhLstBrandSEOPageEntity,
     (e: PhLstBrandSEOPageEntity) => e.ph_brandCode,
   )
   @JoinColumn({ name: 'ph_code' })
-  ph_brandSEOPages: PhLstBrandSEOPageEntity[];
+  ph_lst_brandSEOPages: PhLstBrandSEOPageEntity[];
 }

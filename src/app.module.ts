@@ -10,6 +10,7 @@ import { PhCtlSitemapChangefreqModule } from './res/api/v3/ph_ctl_sitemap-change
 import { PhCtlItemCharacteristicsModule } from './res/api/v3/ph_ctl_item-characteristics/ph_ctl_item-characteristics.module';
 import { PhCtlSeopagesModule } from './res/api/v3/ph_ctl_seopages/ph_ctl_seopages.module';
 import { PhCtlBrandsModule } from './res/api/v3/ph_ctl_brands/ph_ctl_brands.module';
+import { PhCtlItemCategoriesModule } from './res/api/v3/ph_ctl_item-categories/ph_ctl_item-categories.module';
 
 @Module({
   imports: [
@@ -33,6 +34,7 @@ import { PhCtlBrandsModule } from './res/api/v3/ph_ctl_brands/ph_ctl_brands.modu
     PhCtlItemCharacteristicsModule,
     PhCtlSeopagesModule,
     PhCtlBrandsModule,
+    PhCtlItemCategoriesModule,
   ],
   controllers: [AppController],
   providers: [AppService],

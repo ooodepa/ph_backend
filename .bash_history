@@ -47,3 +47,10 @@ yarn migr-run
 yarn migr-gen src/migrations/PH_LST_BrandSEOPages
 yarn migr-run
 
+yarn nest g res res/api/v3/PH_CTL_ItemCategories --no-spec
+yarn migr-gen src/migrations/PH_CTL_ItemCategories
+yarn migr-run
+yarn migr-gen src/migrations/PH_CTL_ItemCategoryGalery
+yarn migr-run
+yarn migr-gen src/migrations/PH_LST_ItemCategorySEOPages
+yarn migr-run

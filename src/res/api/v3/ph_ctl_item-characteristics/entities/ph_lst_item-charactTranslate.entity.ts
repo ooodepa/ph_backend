@@ -5,6 +5,7 @@ import {
   ManyToOne,
   PrimaryGeneratedColumn,
 } from 'typeorm';
+
 import { PhCtlItemCharacteristicEntity } from './ph_ctl_item-characteristic.entity';
 
 @Entity('PH_LST_ItemCharactTranslate')

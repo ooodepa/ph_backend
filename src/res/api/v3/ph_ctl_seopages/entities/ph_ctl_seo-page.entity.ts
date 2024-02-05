@@ -8,12 +8,12 @@ import {
   PrimaryGeneratedColumn,
 } from 'typeorm';
 
-import { PhLstSeoPageGaleryEntity } from './ph_lst_seopagesgalery.entity';
+import { PhLstSeoPageGaleryEntity } from './ph_lst_seo-page-galery.entity';
 import { PhCtlLanguageEntity } from '../../ph_ctl_languages/entities/ph_ctl_language.entity';
 import { PhCtlSitemapChangefreqEntity } from '../../ph_ctl_sitemap-changefreq/entities/ph_ctl_sitemap-changefreq.entity';
 
 @Entity('PH_CTL_SEOPages')
-export class PhCtlSeopageEntity {
+export class PhCtlSeoPageEntity {
   @PrimaryGeneratedColumn('uuid')
   ph_code: string;
 
