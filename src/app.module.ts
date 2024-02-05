@@ -11,6 +11,7 @@ import { PhCtlItemCharacteristicsModule } from './res/api/v3/ph_ctl_item-charact
 import { PhCtlSeopagesModule } from './res/api/v3/ph_ctl_seopages/ph_ctl_seopages.module';
 import { PhCtlBrandsModule } from './res/api/v3/ph_ctl_brands/ph_ctl_brands.module';
 import { PhCtlItemCategoriesModule } from './res/api/v3/ph_ctl_item-categories/ph_ctl_item-categories.module';
+import { PhCtlItemsModule } from './res/api/v3/ph_ctl_items/ph_ctl_items.module';
 
 @Module({
   imports: [
@@ -35,6 +36,7 @@ import { PhCtlItemCategoriesModule } from './res/api/v3/ph_ctl_item-categories/p
     PhCtlSeopagesModule,
     PhCtlBrandsModule,
     PhCtlItemCategoriesModule,
+    PhCtlItemsModule,
   ],
   controllers: [AppController],
   providers: [AppService],

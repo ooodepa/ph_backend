@@ -8,8 +8,8 @@ export class PHCTLItemCategories1707121189576 implements MigrationInterface {
             CREATE TABLE "PH_CTL_ItemCategories" (
                 "ph_code" uuid NOT NULL DEFAULT uuid_generate_v4(),
                 "ph_description" character varying(32) NOT NULL,
-                "ph_parentItemCategoryCode" uuid NOT NULL,
-                "ph_brandCode" uuid NOT NULL,
+                "ph_parentItemCategoryCode" uuid NULL,
+                "ph_brandCode" uuid NULL,
                 CONSTRAINT "PK_04e66e19c77e219f314e7791400" PRIMARY KEY ("ph_code")
             )
         `);

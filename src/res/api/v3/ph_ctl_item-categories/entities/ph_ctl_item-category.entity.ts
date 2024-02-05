@@ -27,14 +27,14 @@ export class PhCtlItemCategoryEntity {
     },
   )
   @JoinColumn({ name: 'ph_parentItemCategoryCode' })
-  @Column('uuid')
+  @Column({ type: 'uuid', nullable: true })
   ph_parentItemCategoryCode: string;
 
   @ManyToOne(() => PhCtlBrandEntity, (e: PhCtlBrandEntity) => e.ph_code, {
     onDelete: 'SET NULL',
   })
   @JoinColumn({ name: 'ph_brandCode' })
-  @Column('uuid')
+  @Column({ type: 'uuid', nullable: true })
   ph_brandCode: string;
 
   @OneToMany(

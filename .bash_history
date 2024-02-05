@@ -54,3 +54,13 @@ yarn migr-gen src/migrations/PH_CTL_ItemCategoryGalery
 yarn migr-run
 yarn migr-gen src/migrations/PH_LST_ItemCategorySEOPages
 yarn migr-run
+
+yarn nest g res res/api/v3/PH_CTL_Items --no-spec
+yarn migr-gen src/migrations/PH_CTL_Items
+yarn migr-run
+yarn migr-gen src/migrations/PH_LST_ItemGalery
+yarn migr-run
+yarn migr-gen src/migrations/PH_LST_ItemSEOPages
+yarn migr-run
+yarn migr-gen src/migrations/PH_LST_ItemCharacteristics
+yarn migr-run
