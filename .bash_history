@@ -21,14 +21,29 @@ yarn add dotenv
 
 yarn nest g res res/api/v3/PH_CTL_SitemapChangefreq --no-spec
 yarn migr-gen src/migrations/PH_CTL_SitemapChangefreq
+yarn migr-run
 
 yarn nest g res res/api/v3/PH_CTL_Languages --no-spec
 yarn migr-gen src/migrations/PH_CTL_Languages
+yarn migr-run
 
 yarn nest g res res/api/v3/PH_CTL_ItemCharacteristics --no-spec
 yarn migr-gen src/migrations/PH_CTL_ItemCharacteristics
+yarn migr-run
 yarn migr-gen src/migrations/PH_LST_ItemCharactTranslate
+yarn migr-run
 
 yarn nest g res res/api/v3/PH_CTL_SEOPages --no-spec
 yarn migr-gen src/migrations/PH_CTL_SEOPages
+yarn migr-run
 yarn migr-gen src/migrations/PH_LST_SEOPageGalery
+yarn migr-run
+
+yarn nest g res res/api/v3/PH_CTL_Brands --no-spec
+yarn migr-gen src/migrations/PH_CTL_Brands
+yarn migr-run
+yarn migr-gen src/migrations/PH_LST_BrandGalery
+yarn migr-run
+yarn migr-gen src/migrations/PH_LST_BrandSEOPages
+yarn migr-run
+
