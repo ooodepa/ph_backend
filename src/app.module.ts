@@ -7,6 +7,7 @@ import { AppService } from './app.service';
 import { AppController } from './app.controller';
 import { PhCtlLanguagesModule } from './res/api/v3/ph_ctl_languages/ph_ctl_languages.module';
 import { PhCtlSitemapChangefreqModule } from './res/api/v3/ph_ctl_sitemap-changefreq/ph_ctl_sitemap-changefreq.module';
+import { PhCtlItemCharacteristicsModule } from './res/api/v3/ph_ctl_item-characteristics/ph_ctl_item-characteristics.module';
 
 @Module({
   imports: [
@@ -27,6 +28,7 @@ import { PhCtlSitemapChangefreqModule } from './res/api/v3/ph_ctl_sitemap-change
     }),
     PhCtlSitemapChangefreqModule,
     PhCtlLanguagesModule,
+    PhCtlItemCharacteristicsModule,
   ],
   controllers: [AppController],
   providers: [AppService],
